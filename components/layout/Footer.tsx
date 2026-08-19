@@ -4,7 +4,9 @@ export default function Footer() {
       <div className="flex space-x-6 mb-2">
         <a
           className="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:translate-y-[-2px] flex flex-col items-center group"
-          href="#"
+          href="https://github.com/NIK-llama"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <span className="material-symbols-outlined mb-1 group-hover:text-primary-container">
             code
@@ -22,17 +24,6 @@ export default function Footer() {
           </span>
           <span className="font-label-mono text-label-caps opacity-0 group-hover:opacity-100 transition-opacity text-primary-container">
             LinkedIn
-          </span>
-        </a>
-        <a
-          className="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:translate-y-[-2px] flex flex-col items-center group"
-          href="#"
-        >
-          <span className="material-symbols-outlined mb-1 group-hover:text-primary-container">
-            terminal
-          </span>
-          <span className="font-label-mono text-label-caps opacity-0 group-hover:opacity-100 transition-opacity text-primary-container">
-            Codepen
           </span>
         </a>
       </div>
