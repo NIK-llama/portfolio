@@ -62,20 +62,20 @@ export default function WorkSection() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
-          title="Quantum Data Platform"
-          description="A high-performance data visualization dashboard built for real-time analytics. Features complex SVG charting and interactive 3D data representations."
-          backgroundImage="/images/quantum.png"
-          githubLink="#"
-          deploymentLink="#"
-          tags={['React', 'Next.js', 'Three.js']}
+          title="StackUnderflow"
+          description="An AI-powered Stack Overflow clone built with Next.js 16, React 19, Tailwind CSS v4, Prisma, PostgreSQL, and Gemini AI."
+          backgroundImage="/images/proj1.png"
+          githubLink="https://github.com/NIK-llama/stackunderflow"
+          deploymentLink="https://stackunderflow-ten.vercel.app"
+          tags={['React', 'Next.js', 'Prisma', 'Gemini-ai', 'PostgreSQL', 'Tailwindcss', 'TypeScript']}
         />
         <ProjectCard
-          title="Aether Protocol"
-          description="A decentralized application interface allowing users to seamlessly interact with smart contracts. Focuses on bridging complex technical operations with intuitive UI design."
-          backgroundImage="/images/aether.png"
-          githubLink="#"
-          deploymentLink="#"
-          tags={['TypeScript', 'Tailwind', 'Web3.js']}
+          title="Fastapi-Nextjs Blog"
+          description="Modern full-stack blog platform built with Next.js 15 (App Router), FastAPI (Python 3.13), Turborepo monorepo, PostgreSQL (SQLAlchemy async), and Cloudflare R2 media storage. Fully typed with pnpm workspaces & JWT authentication."
+          backgroundImage="/images/proj2.png"
+          githubLink="https://github.com/NIK-llama/fastapi-nextjs-blog"
+          deploymentLink="https://fastapi-nextjs-blog-web.vercel.app"
+          tags={['FastAPI', 'Next.js', 'Python', 'uv', 'Sqlalchemy', 'Alembic', 'Turborepo', 'Cloudflare', 'TypeScript']}
         />
         <ProjectCard
           title="Lumina E-Commerce"

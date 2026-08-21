@@ -43,11 +43,11 @@ export default function ContactSection() {
         Get In Touch
       </h2>
       <p className="text-on-surface-variant mb-10">
-        I&apos;m currently looking for any new opportunities, my inbox is always open. Whether
+        I&apos;m currently looking for new opportunities, my inbox is always open. Whether
         you have a question or just want to say hi, I&apos;ll try my best to get back to you!
       </p>
       <MagneticButton
-        href="mailto:hello@example.com"
+        href="mailto:nikshitog@gmail.com"
         className="px-8 py-4 border border-primary-container text-primary-container font-label-mono text-label-mono rounded hover:bg-accent-glow transition-all duration-300 hover:shadow-[0_0_15px_rgba(95,251,214,0.3)]"
       >
         Say Hello
