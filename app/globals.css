@@ -129,6 +129,11 @@
   background: var(--color-secondary-container); 
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   background-color: var(--color-surface);
   color: var(--color-on-surface);

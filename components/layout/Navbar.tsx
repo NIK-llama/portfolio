@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import gsap from 'gsap';
 
 import MagneticButton from '@/components/ui/MagneticButton';
 
@@ -38,27 +37,34 @@ export default function Navbar() {
       </a>
       <div className="hidden md:flex items-center space-x-8">
         <div className="flex items-center space-x-6 font-label-mono text-label-mono">
-          <a
+          {/* <a
             className="text-on-surface-variant hover:text-primary transition-colors duration-300 nav-link flex items-center"
             href="#experience"
           >
             <span className="text-primary-container mr-1">01.</span> Experience
-          </a>
+          </a> */}
           <a
             className="text-on-surface-variant hover:text-primary transition-colors duration-300 nav-link flex items-center"
             href="#work"
           >
-            <span className="text-primary-container mr-1">02.</span> Work
+            <span className="text-primary-container mr-1">01.</span> Work
           </a>
           <a
             className="text-on-surface-variant hover:text-primary transition-colors duration-300 nav-link flex items-center"
             href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+              window.history.pushState(null, '', '#contact');
+            }}
           >
-            <span className="text-primary-container mr-1">03.</span> Contact
+            <span className="text-primary-container mr-1">02.</span> Contact
           </a>
         </div>
         <MagneticButton
-          href="#"
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-4 py-2 border border-primary-container text-primary-container font-label-mono text-label-mono rounded hover:bg-accent-glow transition-all duration-300"
         >
           Resume

@@ -54,7 +54,7 @@ export default function WorkSection() {
       <div className="flex items-center mb-10">
         <h2 className="font-headline-lg text-headline-lg text-primary flex items-center whitespace-nowrap">
           <span className="font-label-mono text-headline-md text-primary-container mr-3 font-normal">
-            02.
+            01.
           </span>
           Some Things I&apos;ve Built
         </h2>
@@ -67,7 +67,7 @@ export default function WorkSection() {
           backgroundImage="/images/proj1.png"
           githubLink="https://github.com/NIK-llama/stackunderflow"
           deploymentLink="https://stackunderflow-ten.vercel.app"
-          tags={['React', 'Next.js', 'Prisma', 'Gemini-ai', 'PostgreSQL', 'Tailwindcss', 'TypeScript']}
+          tags={['React', 'Next.js', 'Prisma', 'Shadcn', 'Gemini-ai', 'PostgreSQL', 'Zod', 'Tailwindcss', 'TypeScript', 'Next-Auth']}
         />
         <ProjectCard
           title="Fastapi-Nextjs Blog"
@@ -78,12 +78,11 @@ export default function WorkSection() {
           tags={['FastAPI', 'Next.js', 'Python', 'uv', 'Sqlalchemy', 'Alembic', 'Turborepo', 'Cloudflare', 'TypeScript']}
         />
         <ProjectCard
-          title="Lumina E-Commerce"
-          description="A headless e-commerce solution with fluid page transitions and scroll-driven animations, providing a premium shopping experience."
-          backgroundImage="/images/lumina.png"
-          githubLink="#"
-          deploymentLink="#"
-          tags={['Next.js', 'GSAP', 'Shopify API']}
+          title="Analytics-Dashboard"
+          description="A high-performance, self-hosted web analytics platform and event ingestion engine built with Next.js 15, FastAPI, and TimescaleDB."
+          backgroundImage="/images/proj3.png"
+          githubLink="https://github.com/NIK-llama/analytics-dashboard"
+          tags={['Next.js', 'FastAPI', 'Python', 'uv', 'Analytics', 'Time-Series', 'Recharts', 'Turborepo', 'Timescaledb']}
         />
       </div>
     </section>

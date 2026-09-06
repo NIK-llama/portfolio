@@ -19,7 +19,7 @@ export default function VerticalNavbar() {
       }
 
       // Simple intersection tracking for active section highlighting
-      const sections = ['AboutMe', 'experience', 'work', 'contact'];
+      const sections = ['AboutMe', /*'experience',*/ 'work', 'contact'];
       for (const section of sections.reverse()) {
         const el = document.getElementById(section);
         if (el) {
@@ -41,9 +41,9 @@ export default function VerticalNavbar() {
 
   const navItems = [
     { id: 'AboutMe', label: '00', title: 'About Me' },
-    { id: 'experience', label: '01', title: 'Experience' },
-    { id: 'work', label: '02', title: 'Work' },
-    { id: 'contact', label: '03', title: 'Contact' },
+    // { id: 'experience', label: '01', title: 'Experience' },
+    { id: 'work', label: '01', title: 'Work' },
+    { id: 'contact', label: '02', title: 'Contact' },
   ];
 
   return (
@@ -59,6 +59,11 @@ export default function VerticalNavbar() {
         <MagneticButton
           key={item.id}
           href={`#${item.id}`}
+          onClick={item.id === 'contact' ? (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            window.history.pushState(null, '', `#${item.id}`);
+          } : undefined}
           className="relative group flex items-center justify-center w-10 h-10"
           title={item.title}
         >

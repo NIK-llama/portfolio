@@ -62,9 +62,9 @@ export default function ProjectCard({
         <p className="text-on-surface-variant text-sm mb-6 grow">
           {description}
         </p>
-        <div className="flex flex-wrap gap-2 mt-auto font-label-mono text-label-caps text-text-dim">
+        <div className="flex flex-wrap gap-3 mt-auto font-label-mono text-xs text-text-dim">
           {tags.map((tag) => (
-            <span key={tag} className="px-2 py-1 bg-surface-container rounded">
+            <span key={tag} className="px-2.5 py-1 bg-surface-container-highest/50 rounded-md">
               {tag}
             </span>
           ))}

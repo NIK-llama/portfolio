@@ -17,7 +17,7 @@ export default function Footer() {
         </a>
         <a
           className="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:translate-y-[-2px] flex flex-col items-center group"
-          href="https://www.linkedin.com/in/nikshit-chauhan-242a0628a"
+          href="https://www.linkedin.com/in/nikshit-chauhan-gg"
         >
           <span className="material-symbols-outlined mb-1 group-hover:text-primary-container">
             work
